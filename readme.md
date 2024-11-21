@@ -98,6 +98,24 @@ Actualiza los datos de un desarrollador existente.
 
 ---
 
+## Obtener Tecnologías
+
+### Descripción
+Este endpoint permite obtener todas las tecnologías registradas en la base de datos. Es útil para cargar opciones en formularios o listas desplegables en el frontend.
+
+### Detalles del Endpoint
+- **Método:** GET
+- **Ruta:** `/tecnologias`
+- **Headers:** Ninguno requerido.
+- **Body:** No aplica.
+
+### Respuestas
+- **200 OK:** Tecnologías obtenidas con éxito.
+- **404 Not Found:** No se encontraron tecnologías.
+- **500 Internal Server Error:** Ocurrió un error inesperado en el servidor.
+
+
+
 ## Notas Generales
 
 - **Autenticación:** Para endpoints protegidos, se requiere un token JWT en el encabezado `Authorization: Bearer <token>`.

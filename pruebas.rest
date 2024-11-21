@@ -24,3 +24,6 @@ Content-Type: application/json
 ### Renovar Token
 POST {{baseUrl}}/usuarios/login/renovar
 Authorization: Bearer <TU_TOKEN_AQUÍ>
+
+### Obtener todas las tecnologías
+GET {{baseUrl}}/tecnologias

@@ -12,6 +12,13 @@ async function getTecnologiasByDesarrolladorId(desarrolladorId) {
   return rows; // Devuelve un array con los nombres de las tecnologías
 }
 
+// Obtener todas las tecnologías
+async function obtenerTodasLasTecnologias() {
+  const [rows] = await pool.query(`SELECT id, nombre FROM tecnologias`);
+  return rows;
+}
+
 module.exports = {
   getTecnologiasByDesarrolladorId,
+  obtenerTodasLasTecnologias
 };
