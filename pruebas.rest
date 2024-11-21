@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:3000/api
+
+
+### Registrar un Administrador
+POST {{baseUrl}}/usuarios/administrador/registro
+Content-Type: application/json
+
+{
+  "email": "nuevoadmin@example.com",
+  "password": "passwordseguro123"
+}
+
+
+### Login de Usuario
+POST {{baseUrl}}/usuarios/login
+Content-Type: application/json
+
+{
+  "email": "admin@example.com",
+  "password": "securepassword123"
+}
+
+
+### Renovar Token
+POST {{baseUrl}}/usuarios/login/renovar
+Authorization: Bearer <TU_TOKEN_AQUÍ>

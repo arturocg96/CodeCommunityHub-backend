@@ -1,2 +1,23 @@
-# Excluir node_modules
+# Node.js
 node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environment
+.env
+
+# Public Files
+Public/*
+
+# Editor Config
+.idea/
+.vscode/
+.DS_Store
+
+# OS-specific
+Thumbs.db
